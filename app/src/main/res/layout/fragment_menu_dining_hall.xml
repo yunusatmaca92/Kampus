@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuFragments.DiningHall"
+    android:id="@+id/login_fragment_announcement"
+    android:background="@mipmap/dining_background"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/d_room"
+            android:drawableEnd="@mipmap/arrow_right"
+            android:text="Yemekhane"
+            android:textColor="@color/mainColor"
+            android:textSize="20sp"
+            android:background="#bb70c1e9"
+            android:paddingLeft="15dp"
+            android:textAlignment="textStart"
+            />
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mainColor"
+            android:layout_below="@+id/d_room"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/d_res"
+            android:drawableEnd="@mipmap/arrow_right"
+            android:text="Kelebek Cafe Restaurant"
+            android:layout_below="@+id/line1"
+            android:textColor="@color/mainColor"
+            android:textSize="20sp"
+            android:background="#bb70c1e9"
+            android:paddingLeft="15dp"
+            android:textAlignment="textStart"
+            />
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mainColor"
+            android:layout_below="@+id/d_res"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/card_money"
+            android:drawableEnd="@mipmap/arrow_right"
+            android:text="Karta Para Yükle"
+            android:layout_below="@+id/line2"
+            android:textColor="@color/mainColor"
+            android:textSize="20sp"
+            android:background="#bb70c1e9"
+            android:paddingLeft="15dp"
+            android:textAlignment="textStart"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

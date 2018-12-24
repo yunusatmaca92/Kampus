@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Announcement.generalAnnouncement"
+    android:background="@mipmap/announcements_background"
+    android:id="@+id/announcements_linear_layout"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#bb70c1e9"
+        android:textSize="25sp"
+        android:textColor="@color/mainColor"
+        android:text="Duyurular"
+        android:gravity="center"
+        android:id="@+id/text_announcements"
+        />
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/image_flipper"
+        android:padding="5dp"
+        android:layout_below="@+id/text_announcements"
+        android:layout_marginTop="5dp"
+
+        >
+    </ViewFlipper>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_product"
+        android:layout_marginTop="5dp"
+        android:dividerHeight="5dp"
+        android:divider="@drawable/list_view_divider"
+        android:layout_below="@+id/image_flipper"
+
+        >
+
+    </ListView>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/progBaar"
+        android:visibility="invisible"
+        />
+</RelativeLayout>

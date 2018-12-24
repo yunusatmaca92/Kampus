@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#005d6f"
+    android:gravity="center_horizontal"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    >
+
+    <TextView
+        android:id="@+id/textViewNoNetworkTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="courier"
+        android:gravity="center"
+        android:text="İnternet bağlantınız yok"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_below="@+id/textViewNoNetworkTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:background="@mipmap/radyo_gtu" />
+
+</RelativeLayout>

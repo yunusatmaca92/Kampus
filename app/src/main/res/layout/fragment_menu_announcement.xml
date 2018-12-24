@@ -1,0 +1,59 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuFragments.Announcement"
+    android:id="@+id/login_fragment_announcement"
+    android:background="@mipmap/announcements_background"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/g_announcement"
+            android:drawableEnd="@mipmap/arrow_right"
+            android:text="@string/generalAnnouncement"
+            android:textColor="@color/mainColor"
+            android:textSize="20sp"
+            android:background="#bb70c1e9"
+            android:paddingStart="15dp"
+            android:textAlignment="textStart"
+            />
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/mainColor"
+            android:layout_below="@+id/g_announcement"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/d_announcement"
+            android:drawableEnd="@mipmap/arrow_down"
+            android:text="@string/departmentAnnouncement"
+            android:layout_below="@+id/line1"
+            android:textColor="@color/mainColor"
+            android:textSize="20sp"
+            android:background="#bb70c1e9"
+            android:paddingStart="15dp"
+            android:textAlignment="textStart"
+            />
+        <ExpandableListView
+            android:visibility="gone"
+            android:layout_below="@+id/d_announcement"
+            android:id="@+id/expanded_list_department_announcement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ExpandableListView>
+    </RelativeLayout>
+</FrameLayout>

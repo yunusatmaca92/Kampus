@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Kampus</string>
+
+    <string name="todo">TODO</string>
+    <string name="login">Giriş</string>
+    <string name="radio">Radyo</string>
+    <string name="announcement">Duyurular</string>
+    <string name="diningHall">Yemekhane</string>
+    <string name="links">Bağlantılar</string>
+    <string name="calendar">Takvim</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="bilgiSistem">GTÜ Bilgi Sistem</string>
+    <string name="hosgeldiniz">Hoşgeldiniz</string>
+    <string name="email">E-mail</string>
+    <string name="pass">Password</string>
+    <string name="remember">Kullanıcıyı hatırla</string>
+    <string name="wrong">Yanlış Giriş !</string>
+    <string name="gtu">GTÜ</string>
+    <string name="kampus">Kampüs</string>
+    <string name="date_of_registration">Kayıt Tarihi</string>
+    <string name="approval_registration">Onay Tarihi</string>
+    <string name="approval_status">Onay Durumu</string>
+    <string name="explanation">Açıklama</string>
+    <string name="advisor">Danışmanınızla İletişime Geçebilirsiniz</string>
+    <string name="home">Anasayfa</string>
+    <string name="gtumail">(@)gtu.edu.tr</string>
+    <string name="show">Görüntüle</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="announcementR">Duyurular</string>
+    <string name="stream">YAYIN AKIŞI</string>
+    <string name="ops">Oops..</string>
+    <string name="sww">Looks like something went wrong on our end.</string>
+    <string name="exit">ÇIKIŞ</string>
+    <string name="generalAnnouncement">Genel Duyurular</string>
+    <string name="departmentAnnouncement">Bölüm Duyuruları</string>
+</resources>

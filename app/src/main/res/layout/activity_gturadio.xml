@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuFragments.GTURadio"
+    android:background="#005d6f"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#40ffffff"
+        >
+        <ImageView
+            android:id="@+id/imgRadioGTU"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:src="@mipmap/radyo_gtu"
+            />
+        <TextView
+            android:id="@+id/home_fragment_radio_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/mainColor"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_below="@+id/imgRadioGTU"
+            android:background="#00ffffff"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            />
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/play_button"
+            android:layout_below="@+id/home_fragment_radio_text"
+            android:layout_centerHorizontal="true"
+            android:background="#00ffffff"
+
+            />
+        <TextView
+            android:id="@+id/touch_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play_button"
+            android:gravity="center"
+            android:text="Dokun bana!"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/mainColor"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/imageVolTriangle"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/triangle_volume"
+            android:layout_below="@+id/touch_me"
+            android:layout_marginStart="15dp"
+
+            />
+
+        <SeekBar
+            android:id="@+id/volumeControl1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignStart="@+id/imageVolTriangle"
+            android:layout_below="@+id/touch_me"
+            android:thumbTint="@color/mainColor"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:layout_below="@id/volumeControl1"
+            android:text="Yayın Akışı"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/mainColor"
+            android:id="@+id/streamsText"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/streamsText"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:id="@+id/streams"
+
+                android:layout_marginTop="10dp"
+                >
+
+            </ScrollView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/send_message"
+                android:gravity="center"
+                android:background="#00ffffff"
+                android:text="Mesaj Gönder"
+                />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progb1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="288dp"
+            android:visibility="invisible" />
+        <ProgressBar
+            android:id="@+id/prog_bar_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgRadioGTU"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            />
+        <ProgressBar
+            android:id="@+id/prog_bar_streams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/streamsText"
+            android:layout_marginTop="25dp"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
